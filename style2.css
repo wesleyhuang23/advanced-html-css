@@ -1,0 +1,34 @@
+body{
+  margin: 0;
+}
+
+
+.left-branch {
+    position: absolute;
+    z-index: 999;
+}
+
+.right-branch {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    top: 10;
+}
+
+.vader {
+    position: absolute;
+}
+
+.vader-container {
+    position: relative;
+    background: url('background.jpg')center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 640px;
+    width: 100vw;
+}
+
+p {
+    font-size: 50px;
+}
+```

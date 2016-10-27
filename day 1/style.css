@@ -70,6 +70,6 @@ main h1{
   .nav-bar{
     display: flex;
     flex-direction: column;
-    justify-content: 
+    justify-content:
   }
 }

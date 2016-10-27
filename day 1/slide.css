@@ -1,0 +1,42 @@
+header {
+    width: 100vw;
+    height: 10vh;
+    color: salmon;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vh;
+}
+
+ul {
+    display: flex;
+    width: 50vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 2vh;
+}
+
+.logo {
+    width: 50vw;
+}
+
+body {
+    background: url('https://images.unsplash.com/reserve/unsplash_528b27288f41f_1.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=7d21a0e868112abb0319d5cd9821c94e')no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.sliding {
+    border-bottom: 3px solid transparent;
+    width: 0px;
+    transition: 0.5s ease;
+}
+
+.sliding:hover {
+    border-bottom: 3px solid blue;
+    width: 60px;
+}

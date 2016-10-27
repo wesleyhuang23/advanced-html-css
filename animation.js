@@ -1,11 +1,15 @@
 $(document).ready(function(){
-  $(window).scroll(function(){
-    if(window.scrollTop() > 50){
-      $('header').addClass('smaller');
-      $('.logo').addClass('logo-small');
-    } else {
-      $('header').removeClass('smaller');
-      $('.logo').removeClass('logo-small');
-    }
-  })
+  $(window).on('scroll', function() {
+    var winScroll = $(this).scrollTop();
+
+    $('.left-branch').css({
+      'transform': 'translate(-' + winScroll / 10 + '%, 0px)'
+    });
+    $('.right-branch').css({
+      'transform': 'translate(+' + winScroll / 10 + '%, 0px)'
+    });
+    $('.vader').css({
+      'transform': 'translateY(+' + winScroll / 10 + '%)'
+    });
+  });
 });
