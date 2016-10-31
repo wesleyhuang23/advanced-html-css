@@ -1,0 +1,61 @@
+body{
+  margin: 0;
+  background-image: url('img/Pasted image at 2016_10_31 09_29 AM-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes drop1 {
+  0% {
+      top: -50px;
+  }
+  25% {
+      top: 40px;
+  }
+  50% {
+      top: 50px;
+  }
+  75% {
+      top: 30px;
+  }
+  100% {
+      top: -50px;
+  }
+}
+
+@keyframes drop2{
+  0% {
+      top: 0px;
+  }
+  25% {
+      top: 20px;
+  }
+  50% {
+      top: 50px;
+  }
+  75% {
+      top: 10px;
+  }
+  100% {
+      top: 0px;
+  }
+}
+
+
+#front-wave{
+  width: 100vw;
+  position: absolute;
+  animation: drop1 5s infinite;
+  position: absolute;
+  top: -10px;
+  transition: ease;
+}
+
+#back-wave{
+  width: 100vw;
+  position: absolute;
+  animation: drop2 5s infinite;
+  position: absolute;
+  top: -10px;
+  transition: ease;
+}
